@@ -1,0 +1,233 @@
+/*
+Theme Name:   realhome
+Description:  theme from scratch
+Author:       Isabel Teixeira
+Template:     realhome
+Version:      0.1.0
+*/
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700);
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 400;
+
+}
+
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/*------------------------------HEADER-----------------------------*/
+header {
+    box-shadow: 0 2px 10px grey;
+    background-color: white;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.logo {
+    position: relative;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.real {
+    font-weight: bold;
+}
+
+
+.border {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+.top-left {
+    border-top: 4px solid black;
+    border-left: 4px solid black;
+    top: 0;
+    left: 0;
+}
+
+.top-right {
+    border-top: 4px solid black;
+    border-right: 4px solid black;
+    top: 0;
+    right: 0;
+}
+
+.bottom-left {
+    border-bottom: 4px solid black;
+    border-left: 4px solid black;
+    bottom: 0;
+    left: 0;
+}
+
+.bottom-right {
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+    bottom: 0;
+    right: 0;
+}
+
+
+.nav_principal nav ul {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+}
+
+.nav_principal nav ul li {
+    color: #eee;
+    padding: 15px;
+}
+
+.nav_principal nav ul li:hover {
+    background-color: #000;
+}
+
+.nav_rs nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_rs nav ul li {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    margin: 10px
+}
+
+.nav_rs nav ul li a {
+}
+
+
+/*-------------------------------FOOTER-----------------------------*/
+
+
+/********************************HOME*******************************/
+
+.title_home {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    width: 80%;
+}
+
+.img-homepage {
+    position: relative;
+    text-align: center;
+    z-index: -9999;
+    max-width: 100%;
+    top: -120px;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.img-homepage img {
+    width: 100%;
+}
+
+/*-----> HOME = NOTRE AGENCE */
+.notre_agence {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.notre_agence_title {
+    width: 150%;
+    color: #242424;
+    padding: 0 20px;
+    text-align: right;
+    position: relative;
+}
+
+
+.notre_agence_desc {
+    font-size: 0.9rem;
+    padding: 0 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+/*-----> HOME = NOS PROPRIETES*/
+
+.proprietes_cards {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.card {
+    width: 30%;
+    border: 1px solid #9E9E9E;
+    border-radius: 4px;
+    margin: 15px;
+    text-align: center;
+}
+
+.thumbnail {
+    overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.thumbnail img {
+    max-width: 100%;
+}
+
+.propriete_infos {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #9E9E9E;
+    padding: 10px;
+}
+
+.propriete_city{
+    color: #9E9E9E;
+    padding: 10px 5px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+}
+
+.propriete_infos p {
+    font-family: Helvetica, serif;
+    font-size: 0.7rem;
+    color: #9E9E9E;
+    padding: 20px 5px;
+}
+
