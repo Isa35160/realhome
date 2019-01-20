@@ -141,12 +141,17 @@ header {
 footer{
     background-color: #303030;
     box-shadow: 0 2px 10px grey;
+    color: #fff;
+    padding: 40px 0
+}
+
+.footer-logo-rs{
+    text-align: center;
 }
 
 .footer-nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .footer-logo {
@@ -156,7 +161,7 @@ footer{
 }
 
 .footer-logo a{
-    color: #fff;
+    color: #acacac;
 }
 
 .footer_logo_border {
@@ -166,49 +171,50 @@ footer{
 }
 
 .footer-top-left {
-    border-top: 3px solid white;
-    border-left: 3px solid white;
+    border-top: 3px solid #acacac;
+    border-left: 3px solid #acacac;
     top: 0;
     left: 0;
 }
 
 .footer-top-right {
-    border-top: 3px solid white;
-    border-right: 3px solid white;
+    border-top: 3px solid #acacac;
+    border-right: 3px solid #acacac;
     top: 0;
     right: 0;
 }
 
 .footer-bottom-left {
-    border-bottom: 3px solid white;
-    border-left: 3px solid white;
+    border-bottom: 3px solid #acacac;
+    border-left: 3px solid #acacac;
     bottom: 0;
     left: 0;
 }
 
 .footer-bottom-right {
-    border-bottom: 3px solid white;
-    border-right: 3px solid white;
+    border-bottom: 3px solid #acacac;
+    border-right: 3px solid #acacac;
     bottom: 0;
     right: 0;
 }
 
 
 .footer_nav_principal nav ul {
-    display: flex;
-    justify-content: space-between;
     font-family: 'Playfair Display', serif;
-    font-size: 1rem;
+    font-size: 0.7rem;
+    padding: 0;
 }
 
 .footer_nav_principal nav ul li {
     color: white;
-    padding: 50px 20px;
+    padding: 5px 0;
+    margin: 0;
 }
 
 
 .footer_nav_principal nav ul li a {
     font-family: "Playfair Display", sans-serif;
+    color: #fff;
 }
 
 .footer_nav_rs nav ul {
@@ -220,8 +226,20 @@ footer{
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    border: 1px solid #eee;
-    margin: 10px
+    border: 1px solid #fff;
+    background-color: #fff;
+    margin: 10px;
+}
+
+.footer_title{
+    font-size: 1.4rem;
+    padding: 15px 0;
+}
+
+.footer_contact p {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.7rem;
+    padding: 5px 0;
 }
 
 /********************************HOME*******************************/
@@ -258,13 +276,23 @@ footer{
     justify-content: space-between;
     padding-bottom: 40px;
 }
+.notre_agence_bloc_title{
+    display: flex;
+    flex-flow: column;
+    width: 40%;
+}
 
 .notre_agence_title {
-    width: 150%;
     color: #242424;
     padding: 0 20px;
     text-align: right;
-    position: relative;
+}
+
+.notre_agence_underline{
+    margin: 0 90%;
+    border-bottom: 3px solid black;
+    width: 5%;
+    padding-top: 20px;
 }
 
 
@@ -272,9 +300,71 @@ footer{
     font-size: 0.9rem;
     padding: 0 20px;
     font-family: 'Playfair Display', serif;
+    width: 70%;
+    color: #797979;
 }
 
 /*-----> HOME = NOS PROPRIETES*/
+
+.points_forts{
+    background-color: #fbfbfb;
+}
+
+.points_forts_vignette{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+    padding: 100px 0;
+
+}
+
+.points_forts_vignette li{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.points_forts_title{
+    padding: 15px 0;
+}
+
+.points_forts_description p{
+    font-family: "Playfair Display", sans-serif;
+    font-size: 0.8rem;
+    color: #9E9E9E;
+}
+
+.points_forts_img{
+    height: 60px;
+    padding: 0 0 70px;
+}
+
+
+/*-----> HOME = NOS PROPRIETES*/
+.nos-proprietes{
+    background-color: #f6f6f6;
+    padding: 20px;
+}
+
+.nos_proprietes_title{
+    text-align: center;
+    padding: 20px 0 0;
+    margin-bottom: 20px;
+}
+
+.nos_proprietes_underline{
+    width: 5%;
+    border-bottom: 3px solid #e2574c;
+    margin: 0 auto;
+}
+
+.nos_proprietes_desc{
+    font-size: 0.9rem;
+    padding: 20px 30%;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
 
 .proprietes_cards {
     display: flex;
