@@ -33,17 +33,17 @@
 <header>
     <div class="container">
         <div class="header-nav">
-            <div class="logo">
-                <a class="logo" href="wp-content/themes/realhome/front-page.php"><span class="real">REAL</span><span class="home">HOME</span></a>
-                <div class="border top-left"></div>
-                <div class="border top-right"></div>
-                <div class="border bottom-left"></div>
-                <div class="border bottom-right"></div>
+            <div class="header-logo">
+                <a class="logo" href="/realhome"><span class="real">REAL</span><span class="home">HOME</span></a>
+                <div class="header_logo_border header-top-left"></div>
+                <div class="header_logo_border header-top-right"></div>
+                <div class="header_logo_border header-bottom-left"></div>
+                <div class="header_logo_border header-bottom-right"></div>
             </div>
-            <div class="nav_principal">
+            <div class="header_nav_principal">
                 <?php wp_nav_menu(array('theme_location' => 'menu-principal', 'container' => 'nav')); ?>
             </div>
-            <div class="nav_rs">
+            <div class="header_nav_rs">
                 <?php wp_nav_menu(array('theme_location' => 'menu-secondaire', 'container' => 'nav')); ?>
             </div>
         </div>

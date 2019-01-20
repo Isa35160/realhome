@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1f4d781-9a04-4cf1-95c1-144bc74d681e" name="Default Changelist" comment="Installation Wordpress + theme" />
+    <list default="true" id="f1f4d781-9a04-4cf1-95c1-144bc74d681e" name="Default Changelist" comment="Installation Wordpress + theme">
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/realhome/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/realhome/front-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/realhome/front-page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/realhome/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/realhome/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/realhome/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/realhome/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/realhome/single-proprietes.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/realhome/single-proprietes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/realhome/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/realhome/style.css" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,14 +17,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.47549018">
+    <splitter split-orientation="horizontal" split-proportion="0.5751295">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/wp-content/themes/realhome/front-page.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="208">
-                  <caret line="59" column="56" lean-forward="true" selection-start-line="59" selection-start-column="56" selection-end-line="59" selection-end-column="70" />
+                <state relative-caret-position="493">
+                  <caret line="62" column="48" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
                 </state>
               </provider>
             </entry>
@@ -24,8 +32,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/wp-content/themes/realhome/gabarit-proprietes.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="575">
-                  <caret line="39" column="63" lean-forward="true" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
+                <state relative-caret-position="-7">
+                  <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
                 </state>
               </provider>
             </entry>
@@ -42,8 +50,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/wp-content/themes/realhome/home.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="352">
-                  <caret line="16" column="72" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="72" />
+                <state relative-caret-position="-7">
+                  <caret line="16" column="72" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="72" />
                 </state>
               </provider>
             </entry>
@@ -60,8 +68,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/wp-content/themes/realhome/header.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="465">
-                  <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+                <state relative-caret-position="369">
+                  <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="47" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/wp-content/themes/realhome/footer.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="374">
+                  <caret line="17" column="33" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="33" />
                 </state>
               </provider>
             </entry>
@@ -69,8 +86,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/wp-content/themes/realhome/functions.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="17" column="29" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="17" selection-end-column="29" />
+                <state relative-caret-position="443">
+                  <caret line="82" column="52" selection-start-line="82" selection-start-column="52" selection-end-line="82" selection-end-column="52" />
                 </state>
               </provider>
             </entry>
@@ -82,8 +99,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/wp-content/themes/realhome/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="316">
-                  <caret line="223" column="20" selection-start-line="223" selection-start-column="20" selection-end-line="223" selection-end-column="20" />
+                <state relative-caret-position="132">
+                  <caret line="142" column="19" lean-forward="true" selection-start-line="142" selection-start-column="19" selection-end-line="142" selection-end-column="19" />
                 </state>
               </provider>
             </entry>
@@ -103,6 +120,8 @@
     <findStrings>
       <find>icon</find>
       <find>terms</find>
+      <find>real</find>
+      <find>home</find>
     </findStrings>
     <replaceStrings>
       <replace>proprietes</replace>
@@ -116,12 +135,14 @@
       <list>
         <option value="$PROJECT_DIR$/wp-content/themes/realhome/gabarit-contact.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/home.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/realhome/functions.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/realhome/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realhome/home.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realhome/single-propriete.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/realhome/single-proprietes.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realhome/gabarit-proprietes.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/realhome/functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realhome/front-page.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/realhome/header.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/realhome/footer.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/realhome/style.css" />
       </list>
     </option>
@@ -191,6 +212,7 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
   </component>
   <component name="RecentsManager">
@@ -221,18 +243,18 @@
       <option name="presentableId" value="Default" />
       <updated>1547799792717</updated>
       <workItem from="1547799794038" duration="15310000" />
-      <workItem from="1547818627558" duration="15473000" />
+      <workItem from="1547818627558" duration="24210000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30783000" />
+    <option name="totallyTimeSpent" value="39520000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13006397" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.07409382" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -245,7 +267,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49946696" visible="true" weight="0.2708559" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49946696" weight="0.2708559" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.43445286" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -319,17 +341,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/realhome/functions.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/realhome/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="29" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="17" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/realhome/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+        <state relative-caret-position="-7">
+          <caret line="16" column="72" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="72" />
         </state>
       </provider>
     </entry>
@@ -340,31 +355,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/realhome/home.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/realhome/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="72" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="72" />
+        <state relative-caret-position="443">
+          <caret line="82" column="52" selection-start-line="82" selection-start-column="52" selection-end-line="82" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/realhome/gabarit-proprietes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="39" column="63" lean-forward="true" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
+        <state relative-caret-position="-7">
+          <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/realhome/front-page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="59" column="56" lean-forward="true" selection-start-line="59" selection-start-column="56" selection-end-line="59" selection-end-column="70" />
+        <state relative-caret-position="493">
+          <caret line="62" column="48" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/realhome/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/realhome/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="223" column="20" selection-start-line="223" selection-start-column="20" selection-end-line="223" selection-end-column="20" />
+        <state relative-caret-position="132">
+          <caret line="142" column="19" lean-forward="true" selection-start-line="142" selection-start-column="19" selection-end-line="142" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/realhome/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="33" />
         </state>
       </provider>
     </entry>

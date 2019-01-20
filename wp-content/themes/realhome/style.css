@@ -12,6 +12,7 @@ Version:      0.1.0
 * {
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
+    font-weight: normal;
     margin: 0;
 }
 
@@ -48,77 +49,84 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
 }
 
-.logo {
+.header-logo {
     position: relative;
-    padding: 10px;
+    padding: 15px;
     font-size: 1.5rem;
 }
 
-.real {
+.real{
+    font-weight: 100;
+}
+
+.home {
     font-weight: bold;
 }
 
-
-.border {
+.header_logo_border {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
 }
 
-.top-left {
-    border-top: 4px solid black;
-    border-left: 4px solid black;
+.header-top-left {
+    border-top: 3px solid black;
+    border-left: 3px solid black;
     top: 0;
     left: 0;
 }
 
-.top-right {
-    border-top: 4px solid black;
-    border-right: 4px solid black;
+.header-top-right {
+    border-top: 3px solid black;
+    border-right: 3px solid black;
     top: 0;
     right: 0;
 }
 
-.bottom-left {
-    border-bottom: 4px solid black;
-    border-left: 4px solid black;
+.header-bottom-left {
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
     bottom: 0;
     left: 0;
 }
 
-.bottom-right {
-    border-bottom: 4px solid black;
-    border-right: 4px solid black;
+.header-bottom-right {
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
     bottom: 0;
     right: 0;
 }
 
 
-.nav_principal nav ul {
+.header_nav_principal nav ul {
     display: flex;
     justify-content: space-between;
     font-family: 'Playfair Display', serif;
+    font-weight: 200;
     font-size: 1rem;
 }
 
-.nav_principal nav ul li {
+.header_nav_principal nav ul li {
     color: #eee;
-    padding: 15px;
+    padding: 50px 20px;
 }
 
-.nav_principal nav ul li:hover {
-    background-color: #000;
+.header_nav_principal nav ul li:hover {
+    background-color: #f2f2f2;
 }
 
-.nav_rs nav ul {
+.header_nav_principal nav ul li a {
+    font-family: "Playfair Display", sans-serif;
+}
+
+.header_nav_rs nav ul {
     display: flex;
     justify-content: space-between;
 }
 
-.nav_rs nav ul li {
+.header_nav_rs nav ul li {
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -126,12 +134,95 @@ header {
     margin: 10px
 }
 
-.nav_rs nav ul li a {
-}
+
 
 
 /*-------------------------------FOOTER-----------------------------*/
+footer{
+    background-color: #303030;
+    box-shadow: 0 2px 10px grey;
+}
 
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    position: relative;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.footer-logo a{
+    color: #fff;
+}
+
+.footer_logo_border {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+}
+
+.footer-top-left {
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    top: 0;
+    left: 0;
+}
+
+.footer-top-right {
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    top: 0;
+    right: 0;
+}
+
+.footer-bottom-left {
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-bottom-right {
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+    bottom: 0;
+    right: 0;
+}
+
+
+.footer_nav_principal nav ul {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+}
+
+.footer_nav_principal nav ul li {
+    color: white;
+    padding: 50px 20px;
+}
+
+
+.footer_nav_principal nav ul li a {
+    font-family: "Playfair Display", sans-serif;
+}
+
+.footer_nav_rs nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_nav_rs nav ul li {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    margin: 10px
+}
 
 /********************************HOME*******************************/
 
@@ -212,7 +303,7 @@ header {
 
 .propriete_infos {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     border-top: 1px solid #9E9E9E;
     padding: 10px;
 }
@@ -222,6 +313,13 @@ header {
     padding: 10px 5px;
     font-family: 'Playfair Display', serif;
     font-size: 1rem;
+}
+
+.propriete_price{
+    color: #e2574c;
+    font-size: 0.8rem;
+    font-family: Helvetica, sans-serif;
+    padding: 15px;
 }
 
 .propriete_infos p {

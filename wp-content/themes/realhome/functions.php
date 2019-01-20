@@ -58,54 +58,6 @@ add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 
 
 
-// ACF - Custum Fields
-if( function_exists('acf_add_local_field_group') ):
-
-    acf_add_local_field_group(array (
-        'key' => 'group_2',
-        'title' => 'My Group',
-        'fields' => array (
-            array (
-                'key' => 'field_1',
-                'label' => 'Sub Title',
-                'name' => 'sub_title',
-                'type' => 'text',
-                'prefix' => '',
-                'instructions' => '',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array (
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'default_value' => '',
-                'placeholder' => '',
-                'prepend' => '',
-                'append' => '',
-                'maxlength' => '',
-                'readonly' => 0,
-                'disabled' => 0,
-            )
-        ),
-        'location' => array (
-            array (
-                array (
-                    'param' => 'post_type',
-                    'operator' => '==',
-                    'value' => 'post',
-                ),
-            ),
-        ),
-        'menu_order' => 0,
-        'position' => 'normal',
-        'style' => 'default',
-        'label_placement' => 'top',
-        'instruction_placement' => 'label',
-        'hide_on_screen' => '',
-    ));
-
-endif;
 
 //Custom Post Type
 function create_post_type() {
@@ -128,7 +80,7 @@ function create_post_type() {
             'menu_icon' => 'dashicons-admin-multisite',
             'taxonomies' => array('villes'),
             'supports' => array( 'title', 'editor', 'thumbnail'),
-            'rewrite' => array('slug' => 'propriete', 'with_front' => true)
+            'rewrite' => array('slug' => 'proprietes', 'with_front' => true)
         )
     );
 
