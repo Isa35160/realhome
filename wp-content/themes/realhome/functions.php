@@ -5,6 +5,7 @@ function insert_css() {
     // On ajoute le css general du theme
     wp_enqueue_style('style', get_stylesheet_uri());
 
+
     //On  ajoute le jQuery au thème
     wp_register_script('jquery2','https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js');
     wp_enqueue_script('jquery2');
@@ -12,10 +13,10 @@ function insert_css() {
     wp_register_script('scroll','https://unpkg.com/scrollreveal/dist/scrollreveal.min.js');
     wp_enqueue_script('scroll');
 
-    // style font
-
+    // FontAwesome
     wp_enqueue_style( 'load-fa', 'https://use.fontawesome.com/releases/v5.6.3/css/all.css' );
     wp_enqueue_style('font');
+
 }
 
 add_theme_support('menus');
@@ -83,6 +84,28 @@ function create_post_type() {
             'rewrite' => array('slug' => 'proprietes', 'with_front' => true)
         )
     );
+ register_post_type('agents',
+        array(
+            'label' => __('Agents'),
+            'singular_label' => __('Agent'),
+            'add_new_item' => __( 'Ajouter un Agent' ),
+            'edit_item' => __( 'Modifier un Agent' ),
+            'new_item' => __( 'Nouveau agent' ),
+            'view_item' => __( 'Voir' ),
+            'search_items' => __( 'Rechercher un agent' ),
+            'not_found' => __( 'Aucun agent trouvé' ),
+            'not_found_in_trash' => __( 'Aucun agent trouvé' ),
+            'public' => true,
+            'show_ui' => true,
+            'capability_type' => 'post',
+            'has_archive' => true,
+            'hierarchical' => true,
+            'menu_icon' => 'dashicons-groups',
+            'taxonomies' => array('postes'),
+            'supports' => array( 'title', 'editor', 'thumbnail'),
+            'rewrite' => array('slug' => 'agents', 'with_front' => true)
+        )
+    );
 
 
 }
@@ -100,6 +123,19 @@ function themes_taxonomy() {
             'query_var' => true,
             'rewrite' => array(
                 'slug' => 'villes',
+                'with_front' => true
+            ),
+            'hierarchical' => true,
+        )
+    );
+    register_taxonomy(
+        'postes',
+        'agents',
+        array(
+            'label' => 'Postes',
+            'query_var' => true,
+            'rewrite' => array(
+                'slug' => 'postes',
                 'with_front' => true
             ),
             'hierarchical' => true,

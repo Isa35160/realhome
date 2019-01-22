@@ -7,6 +7,11 @@ Version:      0.1.0
 */
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700);
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700);
+@import "css/header.css";
+@import "css/footer.css";
+@import "css/nos_proprietes.css";
+@import "css/nos_points_forts.css";
+@import "css/a_propos.css";
 
 
 * {
@@ -28,219 +33,19 @@ ul {
 h2 {
     font-size: 2rem;
     font-weight: 400;
+}
 
+img {
+    max-width: 100%;
 }
 
 
 .container {
-    max-width: 1280px;
+    max-width: 1400px;
     width: 100%;
     margin: 0 auto;
 }
 
-
-/*------------------------------HEADER-----------------------------*/
-header {
-    box-shadow: 0 2px 10px grey;
-    background-color: white;
-}
-
-.header-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header-logo {
-    position: relative;
-    padding: 15px;
-    font-size: 1.5rem;
-}
-
-.real{
-    font-weight: 100;
-}
-
-.home {
-    font-weight: bold;
-}
-
-.header_logo_border {
-    position: absolute;
-    width: 15px;
-    height: 15px;
-}
-
-.header-top-left {
-    border-top: 3px solid black;
-    border-left: 3px solid black;
-    top: 0;
-    left: 0;
-}
-
-.header-top-right {
-    border-top: 3px solid black;
-    border-right: 3px solid black;
-    top: 0;
-    right: 0;
-}
-
-.header-bottom-left {
-    border-bottom: 3px solid black;
-    border-left: 3px solid black;
-    bottom: 0;
-    left: 0;
-}
-
-.header-bottom-right {
-    border-bottom: 3px solid black;
-    border-right: 3px solid black;
-    bottom: 0;
-    right: 0;
-}
-
-
-.header_nav_principal nav ul {
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Playfair Display', serif;
-    font-weight: 200;
-    font-size: 1rem;
-}
-
-.header_nav_principal nav ul li {
-    color: #eee;
-    padding: 50px 20px;
-}
-
-.header_nav_principal nav ul li:hover {
-    background-color: #f2f2f2;
-}
-
-.header_nav_principal nav ul li a {
-    font-family: "Playfair Display", sans-serif;
-}
-
-.header_nav_rs nav ul {
-    display: flex;
-    justify-content: space-between;
-}
-
-.header_nav_rs nav ul li {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    border: 1px solid #eee;
-    margin: 10px
-}
-
-
-
-
-/*-------------------------------FOOTER-----------------------------*/
-footer{
-    background-color: #303030;
-    box-shadow: 0 2px 10px grey;
-    color: #fff;
-    padding: 40px 0
-}
-
-.footer-logo-rs{
-    text-align: center;
-}
-
-.footer-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-logo {
-    position: relative;
-    padding: 10px;
-    font-size: 1.5rem;
-}
-
-.footer-logo a{
-    color: #acacac;
-}
-
-.footer_logo_border {
-    position: absolute;
-    width: 15px;
-    height: 15px;
-}
-
-.footer-top-left {
-    border-top: 3px solid #acacac;
-    border-left: 3px solid #acacac;
-    top: 0;
-    left: 0;
-}
-
-.footer-top-right {
-    border-top: 3px solid #acacac;
-    border-right: 3px solid #acacac;
-    top: 0;
-    right: 0;
-}
-
-.footer-bottom-left {
-    border-bottom: 3px solid #acacac;
-    border-left: 3px solid #acacac;
-    bottom: 0;
-    left: 0;
-}
-
-.footer-bottom-right {
-    border-bottom: 3px solid #acacac;
-    border-right: 3px solid #acacac;
-    bottom: 0;
-    right: 0;
-}
-
-
-.footer_nav_principal nav ul {
-    font-family: 'Playfair Display', serif;
-    font-size: 0.7rem;
-    padding: 0;
-}
-
-.footer_nav_principal nav ul li {
-    color: white;
-    padding: 5px 0;
-    margin: 0;
-}
-
-
-.footer_nav_principal nav ul li a {
-    font-family: "Playfair Display", sans-serif;
-    color: #fff;
-}
-
-.footer_nav_rs nav ul {
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer_nav_rs nav ul li {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    border: 1px solid #fff;
-    background-color: #fff;
-    margin: 10px;
-}
-
-.footer_title{
-    font-size: 1.4rem;
-    padding: 15px 0;
-}
-
-.footer_contact p {
-    font-family: 'Playfair Display', serif;
-    font-size: 0.7rem;
-    padding: 5px 0;
-}
 
 /********************************HOME*******************************/
 
@@ -260,7 +65,6 @@ footer{
     position: relative;
     text-align: center;
     z-index: -9999;
-    max-width: 100%;
     top: -120px;
     max-height: 100vh;
     overflow: hidden;
@@ -276,7 +80,8 @@ footer{
     justify-content: space-between;
     padding-bottom: 40px;
 }
-.notre_agence_bloc_title{
+
+.notre_agence_bloc_title {
     display: flex;
     flex-flow: column;
     width: 40%;
@@ -288,7 +93,7 @@ footer{
     text-align: right;
 }
 
-.notre_agence_underline{
+.notre_agence_underline {
     margin: 0 90%;
     border-bottom: 3px solid black;
     width: 5%;
@@ -304,62 +109,27 @@ footer{
     color: #797979;
 }
 
-/*-----> HOME = NOS PROPRIETES*/
 
-.points_forts{
-    background-color: #fbfbfb;
-}
-
-.points_forts_vignette{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    text-align: center;
-    padding: 100px 0;
-
-}
-
-.points_forts_vignette li{
-    display: flex;
-    flex-direction: column;
-
-}
-
-.points_forts_title{
-    padding: 15px 0;
-}
-
-.points_forts_description p{
-    font-family: "Playfair Display", sans-serif;
-    font-size: 0.8rem;
-    color: #9E9E9E;
-}
-
-.points_forts_img{
-    height: 60px;
-    padding: 0 0 70px;
-}
 
 
 /*-----> HOME = NOS PROPRIETES*/
-.nos-proprietes{
-    background-color: #f6f6f6;
+.proprietes {
     padding: 20px;
 }
 
-.nos_proprietes_title{
+.nos_proprietes_title {
     text-align: center;
     padding: 20px 0 0;
     margin-bottom: 20px;
 }
 
-.nos_proprietes_underline{
+.nos_proprietes_underline {
     width: 5%;
     border-bottom: 3px solid #e2574c;
     margin: 0 auto;
 }
 
-.nos_proprietes_desc{
+.nos_proprietes_desc {
     font-size: 0.9rem;
     padding: 20px 30%;
     font-family: 'Playfair Display', serif;
@@ -387,8 +157,10 @@ footer{
     margin-right: auto
 }
 
-.thumbnail img {
-    max-width: 100%;
+
+.propriete_title{
+    padding: 15px 0;
+    font-weight: bold;
 }
 
 .propriete_infos {
@@ -398,14 +170,14 @@ footer{
     padding: 10px;
 }
 
-.propriete_city{
+.propriete_city {
     color: #9E9E9E;
     padding: 10px 5px;
     font-family: 'Playfair Display', serif;
     font-size: 1rem;
 }
 
-.propriete_price{
+.propriete_price {
     color: #e2574c;
     font-size: 0.8rem;
     font-family: Helvetica, sans-serif;
@@ -418,4 +190,91 @@ footer{
     color: #9E9E9E;
     padding: 20px 5px;
 }
+
+.aucunes_proprietes{
+    padding: 15px 0 50px;
+}
+
+.proprietes_button_all{
+    background-color: #e2574c;
+    padding: 15px 40px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin: 20px 40%;
+}
+
+
+/*-----> HOME = NOS AGENTS*/
+
+.nos_agents_title {
+    padding: 40px 0 20px;
+    text-align: center;
+}
+
+.nos_agents_underline {
+    width: 5%;
+    border-bottom: 3px solid #e2574c;
+    margin: 0 auto;
+}
+
+.agent_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px 0;
+}
+
+.agent_image img {
+    height: 450px;
+}
+
+.agent_infos {
+    padding-bottom: 150px;
+}
+
+.agent_name {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+.agent_presentation p {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 0.8rem;
+    color: #9E9E9E;
+    line-height: 30px;
+}
+
+/*-----> HOME = NOS PARTENAIRES*/
+
+.nos_partenaires_title {
+    text-align: center;
+    padding: 20px 0 0;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    width: 25%;
+}
+
+
+.partners {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 0;
+}
+
+.partners_thumbnails {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.partners_thumbnails li {
+    height: 150px;
+}
+
 

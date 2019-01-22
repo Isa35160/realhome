@@ -1,0 +1,74 @@
+.villes_nav{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 14rem;
+}
+
+/*.villes_nav a:nth-child(1){*/
+    /*border-bottom: 2px solid red;*/
+/*}*/
+
+.villes_nav a:hover, .villes_nav a:active{
+    border-bottom: 2px solid red;
+}
+
+.aucunes_proprietes{
+    margin: 15px 0 150px;
+}
+
+
+/* ------>> SINGLE PROPRIETE */
+
+.article_main_title{
+    padding: 20px 0;
+    margin: 20px 0;
+    font-family: Helvetica, sans-serif;
+}
+
+.bloc_infos{
+    padding: 5px 20px;
+    width: 60%;
+}
+
+.bloc_price{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.bloc_article{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 30px;
+}
+
+.article_img{
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 2px #ccc;
+    border-radius: 5px;
+}
+
+.article_infos{
+    font-size: 0.8rem;
+    color: #5b5b5b;
+}
+
+.article_infos  p{
+    font-family: "Playfair Display", sans-serif;
+    padding: 5px 0;
+}
+
+.fa-bookmark{
+    color: #9E9E9E;
+    font-size: 2rem;
+}
+
+.article_price{
+    color: #e2574c;
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 20px;
+}
+
+.grey_br{
+    border-bottom: 2px solid #9E9E9E;
+}

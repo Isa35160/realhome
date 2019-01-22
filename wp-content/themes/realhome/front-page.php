@@ -19,41 +19,7 @@
           <p class="notre_agence_desc"><?php the_field('notre_agence_au_plus_pres_de_vous'); ?></p>
 </div>
 
-<!--     NOS POINTS FORTS     -->
-
-<div class="points_forts ">
-          <div class="container">
-              <?php if (have_rows('points_forts')): ?>
-
-                        <ul class="points_forts_vignette">
-
-                            <?php while (have_rows('points_forts')): the_row();
-
-                                // vars
-                                $image = get_sub_field('image');
-                                $title = get_sub_field('titre');
-                                $description = get_sub_field('description');
-
-                                ?>
-
-                                      <li class="">
-                                                <div class="points_forts_img"><img src="<?php echo $image['url']; ?>"
-                                                                                   alt="<?php echo $image['alt'] ?>"/>
-                                                </div>
-                                                <h3 class="points_forts_title"><?php echo $title; ?></h3>
-
-                                                <div class="points_forts_description"><?php echo $description; ?></div>
-
-                                      </li>
-
-                            <?php endwhile; ?>
-
-                        </ul>
-
-              <?php endif; ?>
-          </div>
-
-</div>
+<?php include('nos_points_forts.php'); ?>
 
 
 <!--     NOS PROPRIETES     -->
@@ -70,12 +36,11 @@
 
                         $args = array(
                             'post_type' => 'proprietes',
-                            'post_per_page' => 6,
+                            'posts_per_page' => 6,
                             'order' => 'ASC',
                         );
                         // The Query
                         $the_query = new WP_Query($args);
-
 
                         if ($the_query->have_posts()) : ?>
                             <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
@@ -92,7 +57,7 @@
                                                       <div class="propriete_title">
                                                                 <a href="<?php the_permalink() ?>">
 
-                                                                    <?php the_title() ?> -
+                                                                    <?php the_title() ?>
 
                                                                     <?php $id = get_the_ID(); ?>
                                                       </div>
@@ -125,58 +90,72 @@
                             <?php ?>
 
                         <?php endif; ?>
+                        <?php wp_reset_postdata(); ?>
                     </div>
+                    
+
+                              <a class="proprietes_button_all"href="/realhome/nos-proprietes">Voir Toutes</a>
+
           </div>
-
-<!--     NOS PARTENAIRES     -->
-
-          <h2>Our Partners</h2>
-    <?php
-
-    $images = get_field('our_partners');
-    $size = 'full'; // (thumbnail, medium, large, full or custom size)
-
-    if ($images): ?>
-              <ul>
-                  <?php foreach ($images as $image): ?>
-                            <li>
-                                <?php echo wp_get_attachment_image($image['ID'], $size); ?>
-                            </li>
-                  <?php endforeach; ?>
-              </ul>
-    <?php endif; ?>
-
 </div>
 
 <!--     NOS AGENTS     -->
-<h2>Nos Agents</h2>
+<div class="nos-agents">
+          <div class="container">
+                    <h2 class="nos_agents_title"><span>Nos</span> <span
+                                        style="font-weight: bold">Agents</span>
+                    </h2>
+                    <div class="nos_agents_underline"></div>
 
-<?php if (have_rows('nos_agents')): ?>
+              <?php
 
-          <ul class="nos_agents">
+              $args = array(
+                  'post_type' => 'agents',
+                  'posts_per_page' => 1,
+                  'order' => 'ASC',
+              );
+              // The Query
+              $the_query = new WP_Query($args);
 
-              <?php while (have_rows('nos_agents')): the_row();
+              if ($the_query->have_posts()) : ?>
+                  <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                      <?php $agents = get_terms('agents', array(
+                          'hide_empty' => false,
+                      ));  ?>
+                                  <div class="agent_card">
+                                            <div class="thumbnail"><img class="agent_image"
+                                                                        src="<?php the_post_thumbnail_url('large') ?> "
+                                                                        alt=""></div>
+                                            <div class="agent_infos">
+                                                      <div>
+                                                                <a class="agent_name"
+                                                                   href="<?php the_permalink() ?>">
 
-                  // vars
-                  $image = get_sub_field('image');
-                  $name = get_sub_field('nom_prenom');
-                  $presentation = get_sub_field('presentation');
+                                                                    <?php the_title() ?>
 
-                  ?>
+                                                                    <?php $id = get_the_ID(); ?>
 
-                        <li class="">
-                                  <div class="nos_agents_img"><img src="<?php echo $image['url']; ?>"
-                                                                     alt="<?php echo $image['alt'] ?>"/>
+                                                                </a>
+                                                      </div>
+                                                      <div class="agent_presentation">
+                                                          <?php the_content() ?>
+
+                                                      </div>
+                                            </div>
+
                                   </div>
-                                  <h3 class="nos_agents_name"><?php echo $name; ?></h3>
 
-                                  <div class="nos_agents_presentation"><?php echo $presentation; ?></div>
-                        </li>
 
-              <?php endwhile; ?>
+                  <?php endwhile; ?>
+                  <?php ?>
 
-          </ul>
+              <?php endif; ?>
+              <?php wp_reset_postdata(); ?>
+          </div>
+</div>
 
-<?php endif; ?>
+
+<?php include('nos_partenaires.php'); ?>
+
 
 <?php get_footer(); ?>

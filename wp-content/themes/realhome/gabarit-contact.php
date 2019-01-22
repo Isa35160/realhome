@@ -3,14 +3,16 @@
 
 <?php get_header(); ?>
 
-<?php $the_query = new WP_Query($args); ?>
+<?php while (have_posts()): the_post() ; ?>
 
 
-    <h2 class="contact_title">Infos</h2>
     <div class="container">
+              <h2 class="contact_title">Contact</h2>
+              
+              <div class="contact_map"><img src="realhome/images/map.png" alt=""></div>
 
         <?php the_content(); ?>
 
     </div>
-
+<?php endwhile ; ?>
 <?php get_footer(); ?><?php
