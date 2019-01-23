@@ -84,7 +84,6 @@
 
                             <?php endwhile; ?>
                             <?php ?>
-                            <?php wp_pagenavi(); ?>
                         <?php endif; ?>
                     </div>
 

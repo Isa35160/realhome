@@ -43,8 +43,8 @@ if ( function_exists('register_sidebar') )
     register_sidebar(array('name'=>'sidebar',
         'before_widget' => '<div>',
         'after_widget' => '</div>',
-        'before_title' => '<h2>',
-        'after_title' => '</h2>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>',
     ));
 
 // insertion de l'image a la une dans le theme
@@ -53,7 +53,7 @@ add_theme_support( 'post-thumbnails' );
 
 
 function wpdocs_custom_excerpt_length( $length ) {
-    return 15;
+    return 20;
 }
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 

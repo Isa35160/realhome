@@ -12,6 +12,7 @@ Version:      0.1.0
 @import "css/nos_proprietes.css";
 @import "css/nos_points_forts.css";
 @import "css/a_propos.css";
+@import "css/actualites.css";
 @import "css/contact.css";
 
 
@@ -34,6 +35,12 @@ ul {
 h2 {
     font-size: 2rem;
     font-weight: 400;
+    margin: 15px 0;
+}
+
+h3{
+    font-size: 1.2rem;
+    font-weight: 500;
     margin: 15px 0;
 }
 
