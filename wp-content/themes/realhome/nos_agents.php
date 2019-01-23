@@ -29,13 +29,13 @@
                                                                                   src="<?php the_post_thumbnail_url('medium-large') ?> "
                                                                                   alt=""></div>
                                                       <div class="agent_title">
-                                                                <a href="<?php the_permalink() ?>">
+<!--                                                                <a href="--><?php //the_permalink() ?><!--">-->
 
                                                                     <?php the_title() ?>
 
                                                                     <?php $id = get_the_ID(); ?>
 
-                                                      </a>
+<!--                                                      </a>-->
                                                       </div>
                                                       <div class="agent_poste"> <?php $term_list = wp_get_post_terms($post->ID, 'postes', array("fields" => "all"));
                                                           echo $term_list[0]->name; ?></div>

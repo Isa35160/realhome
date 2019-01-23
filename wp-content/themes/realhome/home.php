@@ -3,7 +3,7 @@
 $page_title = get_the_title(get_option('page_for_posts', true)); ?>
 
 <h1 class="actualites_main_title container">Nos <?php echo $page_title ?></h1>
-<div class="actualites">
+<div class="actualites container">
           <div class="">
 
               <?php if (have_posts()) : ?>
@@ -14,7 +14,7 @@ $page_title = get_the_title(get_option('page_for_posts', true)); ?>
                                                                 <a href="<?php echo get_permalink(); ?>"><?php the_title() ?></a>
                                                       </h2>
                                                       <div class="thumbnail"><img class="thumbnail_image"
-                                                                                  src="<?php the_post_thumbnail_url('medium-large') ?> "
+                                                                                  src="<?php the_post_thumbnail_url('large') ?> "
                                                                                   alt=""></div>
 
                                             </div>

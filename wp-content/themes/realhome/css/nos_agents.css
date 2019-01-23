@@ -1,0 +1,41 @@
+/*-----> HOME = NOS AGENTS*/
+
+.nos_agents_title {
+    padding: 40px 0 20px;
+    text-align: center;
+}
+
+.nos_agents_underline {
+    width: 5%;
+    border-bottom: 3px solid #e2574c;
+    margin: 0 auto;
+}
+
+.agent_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px 0;
+}
+
+.agent_image img {
+    height: 450px;
+}
+
+.agent_infos {
+    padding-bottom: 150px;
+}
+
+.agent_name {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+.agent_presentation p {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 0.8rem;
+    color: #9E9E9E;
+    line-height: 30px;
+}

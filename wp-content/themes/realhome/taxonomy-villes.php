@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<div class="proprietes">
 <div class="container">
           <h2 class="nos_proprietes_title"><span>Nos</span> <span style="font-weight: bold">Propriétés</span>
           </h2>
@@ -72,6 +72,6 @@
 
           </div>
 </div>
-
+</div>
 
 <?php get_footer(); ?>
