@@ -75,6 +75,11 @@ aside ul li{
     justify-content: space-between;
 }
 
+.actualite_infos img{
+    height: 600px;
+    margin: 20px 0;
+}
+
 .gray_border{
     border-right: 2px solid #9E9E9E;
 }

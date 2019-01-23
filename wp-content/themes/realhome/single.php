@@ -9,9 +9,15 @@
     <?php while (have_posts()) :
     the_post(); ?>
 
+    <?php add_filter( 'the_content', 'insert_featured_image', 20 );
+
+        function insert_featured_image( $content ) {
+
+            $content = preg_replace( "/<\/p>/", "</p>" . get_the_post_thumbnail($post->ID, 'post-single'), $content, 1 );
+            return $content;
+        } ; ?>
 
           <div class="actualite">
-          <img src="<?php the_post_thumbnail_url('full') ?> " alt="">
                     <section class="actualite_infos">
                               <p class="actualite_date"><?php the_time('d M Y'); ?></p>
                         <?php the_content(); ?>
