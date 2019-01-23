@@ -1,0 +1,32 @@
+
+
+.contact_map {
+border: 2px solid #9E9E9E;
+    border-radius: 4px;
+}
+
+.contact_bloc_infos_form{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.contact_bloc_infos{
+    width: 35%;
+}
+
+.contact_bloc_infos p{
+    font-size: 0.8rem;
+    font-family: "Playfair Display", sans-serif ;
+    padding: 5px 0;
+}
+
+.contact_form{
+    width: 90%;
+}
+
+
+.wpcf7-form p {
+    display: flex;
+   justify-content: space-between;
+}
