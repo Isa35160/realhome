@@ -99,7 +99,8 @@
 }
 
 .proprietes_button_all{
-    background-color: $link_footer_color;
+    background-color: $link_mail_footer_color;
+    border: 1px solid $link_mail_footer_color;
     padding: 15px 40px;
     border-radius: 4px;
     color: #fff;
@@ -107,6 +108,11 @@
     display: flex;
     justify-content: center;
     margin: 20px 40%;
+    transition: all 0.3s;
+    &:hover {
+        background-color: white;
+        color: $link_mail_footer_color;
+    }
 }
 
 

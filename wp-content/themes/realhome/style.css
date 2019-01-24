@@ -200,14 +200,19 @@ header {
   padding: 15px 0 50px; }
 
 .proprietes_button_all {
-  background-color: #ededed;
+  background-color: #e2574c;
+  border: 1px solid #e2574c;
   padding: 15px 40px;
   border-radius: 4px;
   color: #fff;
   font-weight: bold;
   display: flex;
   justify-content: center;
-  margin: 20px 40%; }
+  margin: 20px 40%;
+  transition: all 0.3s; }
+  .proprietes_button_all:hover {
+    background-color: white;
+    color: #e2574c; }
 
 /* ------>> SINGLE PROPRIETE */
 .article_main_title {
