@@ -5,151 +5,713 @@ Author:       Isabel Teixeira
 Template:     realhome
 Version:      0.1.0
 */
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700);
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700);
-@import "css/header.css";
-@import "css/footer.css";
-@import "css/nos_agents.css";
-@import "css/nos_proprietes.css";
-@import "css/nos_points_forts.css";
-@import "css/a_propos.css";
-@import "css/actualites.css";
-@import "css/contact.css";
+/*------------------------------HEADER-----------------------------*/
+header {
+  box-shadow: 0 2px 10px grey;
+  background-color: white; }
+  header .header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header .header-nav .header-logo {
+      position: relative;
+      padding: 15px;
+      font-size: 1.5rem; }
+      header .header-nav .header-logo .real {
+        font-weight: 100; }
+      header .header-nav .header-logo .home {
+        font-weight: bold; }
+      header .header-nav .header-logo .header_logo_border {
+        position: absolute;
+        width: 15px;
+        height: 15px; }
+      header .header-nav .header-logo .header-top-left {
+        border-top: 3px solid black;
+        border-left: 3px solid black;
+        top: 0;
+        left: 0; }
+      header .header-nav .header-logo .header-top-right {
+        border-top: 3px solid black;
+        border-right: 3px solid black;
+        top: 0;
+        right: 0; }
+      header .header-nav .header-logo .header-bottom-left {
+        border-bottom: 3px solid black;
+        border-left: 3px solid black;
+        bottom: 0;
+        left: 0; }
+      header .header-nav .header-logo .header-bottom-right {
+        border-bottom: 3px solid black;
+        border-right: 3px solid black;
+        bottom: 0;
+        right: 0; }
 
+.header_nav_principal nav ul {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Playfair Display", serif;
+  font-weight: 200;
+  font-size: 1rem; }
+  .header_nav_principal nav ul li {
+    color: #3c3c3c;
+    padding: 50px 20px;
+    transition: all 0.3s; }
+    .header_nav_principal nav ul li a {
+      font-family: "Playfair Display", serif; }
+  .header_nav_principal nav ul li:hover {
+    background-color: #f2f2f2; }
+
+.header_nav_rs nav ul {
+  display: flex;
+  justify-content: space-between; }
+  .header_nav_rs nav ul li {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #f2f2f2;
+    margin: 5px;
+    position: relative; }
+    .header_nav_rs nav ul li a {
+      text-indent: -9999px;
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0; }
+  .header_nav_rs nav ul li:before {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 6px;
+    transition: all 0.3s; }
+  .header_nav_rs nav ul li:hover {
+    color: white;
+    border: 2px solid #f2f2f2;
+    background-color: #3c3c3c; }
+
+.menu_burger {
+  display: none; }
+
+/***************************** MEDIA QUERY - MOBILE ****************************/
+@media (max-width: 400px) {
+  .container {
+    max-width: 400px; }
+  .header-nav {
+    justify-content: space-around;
+    padding: 10px 0; }
+  .header_nav_principal {
+    display: none; }
+  .header_nav_rs {
+    display: none; }
+  .menu_burger {
+    display: block; }
+  .title_home {
+    font-size: 1rem;
+    width: 100%; }
+  /*-------> HOME - NOTRE AGENCE*/
+  .notre_agence {
+    display: block;
+    text-align: center; }
+  .notre_agence_bloc_title {
+    display: block;
+    text-align: center; } }
+
+/*-------------------------------FOOTER-----------------------------*/
+footer {
+  background-color: #303030;
+  box-shadow: 0 2px 10px grey;
+  color: #fff;
+  padding: 40px 0; }
+
+.footer-logo-rs {
+  text-align: center; }
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+.footer-logo {
+  position: relative;
+  padding: 10px;
+  font-size: 1.5rem; }
+
+.footer-logo a {
+  color: #ededed; }
+
+.footer_logo_border {
+  position: absolute;
+  width: 15px;
+  height: 15px; }
+
+.footer-top-left {
+  border-top: 3px solid #ededed;
+  border-left: 3px solid #ededed;
+  top: 0;
+  left: 0; }
+
+.footer-top-right {
+  border-top: 3px solid #ededed;
+  border-right: 3px solid #ededed;
+  top: 0;
+  right: 0; }
+
+.footer-bottom-left {
+  border-bottom: 3px solid #ededed;
+  border-left: 3px solid #ededed;
+  bottom: 0;
+  left: 0; }
+
+.footer-bottom-right {
+  border-bottom: 3px solid #ededed;
+  border-right: 3px solid #ededed;
+  bottom: 0;
+  right: 0; }
+
+.footer_nav_principal nav ul {
+  font-family: "Playfair Display", serif;
+  font-size: 0.7rem;
+  padding: 0; }
+  .footer_nav_principal nav ul li {
+    color: white;
+    padding: 5px 0;
+    margin: 0; }
+    .footer_nav_principal nav ul li a {
+      font-family: "Playfair Display", serif;
+      color: #fff; }
+
+.footer_nav_rs nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0 0 0;
+  margin: 0; }
+  .footer_nav_rs nav ul li {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: white;
+    margin: 5px;
+    position: relative; }
+    .footer_nav_rs nav ul li a {
+      text-indent: -9999px;
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0; }
+  .footer_nav_rs nav ul li:before {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 6px;
+    color: #000; }
+  .footer_nav_rs nav ul li:hover {
+    color: white;
+    background-color: #303030; }
+
+.footer_title {
+  font-size: 1.4rem;
+  padding: 0 0 15px 0;
+  margin: 0; }
+
+.footer_contact p {
+  font-family: "Playfair Display", serif;
+  font-size: 0.7rem;
+  padding: 5px 0; }
+  .footer_contact p a {
+    font-family: "Playfair Display", serif;
+    color: #e2574c; }
+
+/*-----> HOME = NOS AGENTS*/
+.nos_agents_title {
+  padding: 40px 0 20px;
+  text-align: center; }
+
+.nos_agents_underline {
+  width: 5%;
+  border-bottom: 3px solid #e2574c;
+  margin: 0 auto; }
+
+.agent_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 20px 0; }
+
+.agent_image img {
+  height: 450px; }
+
+.agent_infos {
+  padding-bottom: 150px; }
+
+.agent_name {
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 15px 0; }
+
+.agent_presentation p {
+  font-family: "Playfair Display", serif;
+  font-size: 0.8rem;
+  color: #9E9E9E;
+  line-height: 30px; }
+
+.villes_nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 14rem; }
+
+/*.villes_nav a:nth-child(1){*/
+/*border-bottom: 2px solid red;*/
+/*}*/
+.villes_nav a:hover, .villes_nav a:active {
+  border-bottom: 2px solid red; }
+
+.aucunes_proprietes {
+  margin: 15px 0 250px; }
+
+/*-----> HOME = NOS PROPRIETES*/
+.proprietes {
+  padding: 20px; }
+
+.nos_proprietes_title {
+  text-align: center;
+  padding: 20px 0 0;
+  margin-bottom: 20px; }
+
+.nos_proprietes_underline {
+  width: 5%;
+  border-bottom: 3px solid #e2574c;
+  margin: 0 auto; }
+
+.nos_proprietes_desc {
+  font-size: 0.9rem;
+  padding: 20px 30%;
+  font-family: "Playfair Display", serif;
+  text-align: center; }
+
+.proprietes_cards {
+  display: flex;
+  flex-flow: row wrap; }
+
+.card {
+  width: 30%;
+  border: 1px solid #9E9E9E;
+  border-radius: 4px;
+  margin: 15px;
+  text-align: center; }
+
+.thumbnail {
+  overflow: hidden;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.propriete_title {
+  padding: 15px 0;
+  font-weight: bold; }
+
+.propriete_infos {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #9E9E9E;
+  padding: 10px; }
+
+.propriete_city {
+  color: #9E9E9E;
+  padding: 10px 5px;
+  font-family: "Playfair Display", serif;
+  font-size: 1rem; }
+
+.propriete_price {
+  color: #e2574c;
+  font-size: 0.8rem;
+  font-family: Helvetica, sans-serif;
+  padding: 15px; }
+
+.propriete_infos p {
+  font-family: Helvetica, serif;
+  font-size: 0.7rem;
+  color: #9E9E9E;
+  padding: 20px 5px; }
+
+.aucunes_proprietes {
+  padding: 15px 0 50px; }
+
+.proprietes_button_all {
+  background-color: #e2574c;
+  padding: 15px 40px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin: 20px 40%; }
+
+/* ------>> SINGLE PROPRIETE */
+.article_main_title {
+  padding: 20px 0;
+  margin: 20px 0;
+  font-family: Helvetica, sans-serif; }
+
+.bloc_infos {
+  padding: 5px 20px;
+  width: 60%; }
+
+.bloc_price {
+  display: flex;
+  justify-content: flex-start; }
+
+.bloc_article {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0 30px; }
+
+.article_img {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 2px #ccc;
+  border-radius: 5px; }
+
+.article_infos {
+  font-size: 0.8rem;
+  color: #5b5b5b; }
+
+.article_infos p {
+  font-family: "Playfair Display", serif;
+  padding: 5px 0; }
+
+.fa-bookmark {
+  color: #9E9E9E;
+  font-size: 2rem; }
+
+.article_price {
+  color: #e2574c;
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  padding-left: 20px; }
+
+.grey_br {
+  border-bottom: 2px solid #9E9E9E; }
+
+/***************************** MEDIA QUERY - MOBILE ****************************/
+@media (max-width: 400px) {
+  .proprietes_cards {
+    display: block; }
+  .card {
+    width: 95%;
+    font-size: 0.8rem; }
+  .propriete_city {
+    padding: 5px;
+    font-size: 0.8rem; } }
+
+/*-----> HOME & A PROPOS = POINTS FORTS*/
+.points_forts {
+  background-color: #f6f6f6; }
+
+.points_forts_vignette {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: center;
+  padding: 100px 0; }
+
+.points_forts_vignette li {
+  display: flex;
+  flex-direction: column; }
+
+.points_forts_title {
+  padding: 15px 0; }
+
+.points_forts_description p {
+  font-family: "Playfair Display", serif;
+  font-size: 0.8rem;
+  color: #9E9E9E; }
+
+.points_forts_img {
+  height: 60px;
+  padding: 0 0 70px; }
+
+/***************************** MEDIA QUERY - MOBILE ****************************/
+@media (max-width: 400px) {
+  .points_forts_vignette {
+    display: block; } }
+
+/*-----> HOME = NOS PARTENAIRES*/
+.nos_partenaires_title {
+  text-align: center;
+  padding: 20px 0 0;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  width: 25%; }
+
+.partners {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 0; }
+
+.partners_thumbnails {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0; }
+
+.partners_thumbnails li {
+  height: 150px; }
+
+/*------> A propos */
+.apropos_title {
+  padding: 50px 0 0; }
+
+.bloc_apropos {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  margin-bottom: 50px; }
+
+.apropos_image {
+  margin-right: 30px; }
+
+.apropos_image img {
+  border-radius: 5px; }
+
+.apropos_presentation {
+  font-family: "Playfair Display", serif;
+  font-size: 0.85rem;
+  color: #9E9E9E;
+  width: 80%;
+  line-height: 30px; }
+
+.apropos_presentation p {
+  font-family: "Playfair Display", serif; }
+
+/*------> NOTRE EQUIPE */
+.agents_cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 60px; }
+
+.agent_thumbnail {
+  overflow: hidden;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.agent_title {
+  padding: 30px 0 0;
+  font-weight: normal; }
+
+.agent_poste {
+  font-family: "Playfair Display", serif;
+  font-size: small;
+  color: #9E9E9E;
+  padding: 10px 0; }
+
+/* ---- NOS ACTUALITES = home.php*/
+.actualites_main_title {
+  text-align: center;
+  padding-top: 40px;
+  font-family: Helvetica, sans-serif; }
+
+.actualites {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px; }
+
+.actualite {
+  width: 95%; }
+
+.actualite {
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 50px; }
+
+.actualite_description p {
+  font-size: 0.9rem;
+  font-family: "Playfair Display", serif;
+  color: #9E9E9E;
+  margin-top: 15px; }
+
+.post_btn {
+  margin-top: 30px; }
+
+.lire_suite {
+  background-color: #e2574c;
+  padding: 15px 30px;
+  border-radius: 4px;
+  color: #fff; }
+
+aside {
+  width: 30%; }
+
+aside ul li {
+  padding-bottom: 10px;
+  color: #6f6f6f;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column; }
+
+.post-date {
+  font-family: "Playfair Display", serif;
+  font-size: 0.9rem;
+  color: #9E9E9E; }
+
+/* ---- ACTUALITE = single.php*/
+.actualite_main_title {
+  padding: 30px 0; }
+
+.actualite_single {
+  display: flex;
+  justify-content: space-between; }
+
+.actualite_infos img {
+  height: 600px;
+  margin: 20px 0; }
+
+.gray_border {
+  border-right: 2px solid #9E9E9E; }
+
+.contact_title {
+  padding: 50px 0 0;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px; }
+
+.contact_map {
+  border: 2px solid #9E9E9E;
+  border-radius: 4px; }
+
+.contact_bloc_infos_form {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0; }
+
+.contact_bloc_infos {
+  width: 35%; }
+
+.contact_bloc_infos p, .contact_bloc_infos p a {
+  font-size: 0.8rem;
+  font-family: "Playfair Display", serif;
+  padding: 5px 0; }
+
+.contact_form {
+  width: 80%; }
+
+input, textarea {
+  font-size: 1.1rem;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #9E9E9E;
+  width: 100%; }
+
+.contact-subinput {
+  display: flex;
+  justify-content: space-between; }
+
+.wpcf7-textarea {
+  width: 100%; }
+
+.wpcf7-submit {
+  background-color: #e2574c;
+  padding: 15px 40px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  justify-content: center; }
 
 * {
-    box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
-    font-weight: normal;
-    margin: 0;
-}
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  margin: 0; }
 
 a {
-    text-decoration: none;
-    color: #000;
-}
+  text-decoration: none;
+  color: #000; }
 
 ul {
-    list-style-type: none;
-}
+  list-style-type: none; }
 
 h2 {
-    font-size: 2rem;
-    font-weight: 400;
-    margin: 15px 0;
-}
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 15px 0; }
 
-h3{
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin: 15px 0;
-}
+h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 15px 0; }
 
 img {
-    max-width: 100%;
-}
-
+  max-width: 100%; }
 
 .container {
-    max-width: 1400px;
-    width: 100%;
-    margin: 0 auto;
-}
-
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto; }
 
 /********************************HOME*******************************/
-
 .title_home {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    text-align: center;
-    color: #fff;
-    font-size: 3rem;
-    width: 80%;
-}
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  width: 80%; }
 
 .img-homepage {
-    position: relative;
-    text-align: center;
-    z-index: -9999;
-    top: -120px;
-    max-height: 100vh;
-    overflow: hidden;
-}
+  position: relative;
+  text-align: center;
+  z-index: -9999;
+  top: -120px;
+  max-height: 100vh;
+  overflow: hidden; }
 
 .img-homepage img {
-    width: 100%;
-}
+  width: 100%; }
 
 /*-----> HOME = NOTRE AGENCE */
 .notre_agence {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 40px;
-}
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px; }
 
 .notre_agence_bloc_title {
-    display: flex;
-    flex-flow: column;
-    width: 40%;
-}
+  display: flex;
+  flex-flow: column;
+  width: 40%; }
 
 .notre_agence_title {
-    color: #242424;
-    padding: 0 20px;
-    text-align: right;
-}
+  color: #242424;
+  padding: 0 20px;
+  text-align: right; }
 
 .notre_agence_underline {
-    margin: 0 90%;
-    border-bottom: 3px solid black;
-    width: 5%;
-    padding-top: 20px;
-}
-
+  margin: 0 90%;
+  border-bottom: 3px solid black;
+  width: 5%;
+  padding-top: 20px; }
 
 .notre_agence_desc {
-    font-size: 0.9rem;
-    padding: 0 20px;
-    font-family: 'Playfair Display', serif;
-    width: 70%;
-    color: #797979;
-}
+  font-size: 0.9rem;
+  padding: 0 20px;
+  font-family: "Playfair Display", serif;
+  width: 70%;
+  color: #797979; }
 
-
-
-
-
-
-/*-----> HOME = NOS PARTENAIRES*/
-
-.nos_partenaires_title {
-    text-align: center;
-    padding: 20px 0 0;
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-    width: 25%;
-}
-
-
-.partners {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 70px 0;
-}
-
-.partners_thumbnails {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
-}
-
-.partners_thumbnails li {
-    height: 150px;
-}
-
-
+@media (max-width: 400px) {
+  .container {
+    max-width: 400px; }
+  /*-------> HOME - NOTRE AGENCE*/
+  .notre_agence {
+    display: block;
+    text-align: center; }
+  .notre_agence_bloc_title {
+    display: block;
+    text-align: center; } }

@@ -1,0 +1,16 @@
+{
+  "name": "realhome",
+  "version": "1.0.0",
+  "description": "realhome",
+  "main": "index.js",
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/styles.scss style.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "author": "Isabel Teixeira",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

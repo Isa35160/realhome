@@ -1,0 +1,60 @@
+.contact_title{
+    padding: 50px 0 0;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.contact_map {
+    border: 2px solid #9E9E9E;
+    border-radius: 4px;
+}
+
+.contact_bloc_infos_form {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.contact_bloc_infos {
+    width: 35%;
+}
+
+.contact_bloc_infos p, .contact_bloc_infos p a {
+    font-size: 0.8rem;
+    font-family: $playfair;
+    padding: 5px 0;
+}
+
+
+
+.contact_form {
+    width: 80%;
+}
+
+input, textarea {
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #9E9E9E;
+    width: 100%;
+}
+
+.contact-subinput {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wpcf7-textarea{
+    width: 100%;
+}
+
+.wpcf7-submit{
+    background-color: #e2574c;
+    padding: 15px 40px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+

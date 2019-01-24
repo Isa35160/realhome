@@ -1,0 +1,30 @@
+
+/*-----> HOME = NOS PARTENAIRES*/
+
+.nos_partenaires_title {
+    text-align: center;
+    padding: 20px 0 0;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    width: 25%;
+}
+
+
+.partners {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 0;
+}
+
+.partners_thumbnails {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.partners_thumbnails li {
+    height: 150px;
+}
+
+

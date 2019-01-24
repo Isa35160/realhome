@@ -1,0 +1,186 @@
+.villes_nav{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 14rem;
+}
+
+/*.villes_nav a:nth-child(1){*/
+    /*border-bottom: 2px solid red;*/
+/*}*/
+
+.villes_nav a:hover, .villes_nav a:active{
+    border-bottom: 2px solid red;
+}
+
+.aucunes_proprietes{
+    margin: 15px 0 250px;
+}
+
+/*-----> HOME = NOS PROPRIETES*/
+.proprietes {
+    padding: 20px;
+}
+
+.nos_proprietes_title {
+    text-align: center;
+    padding: 20px 0 0;
+    margin-bottom: 20px;
+}
+
+.nos_proprietes_underline {
+    width: 5%;
+    border-bottom: 3px solid #e2574c;
+    margin: 0 auto;
+}
+
+.nos_proprietes_desc {
+    font-size: 0.9rem;
+    padding: 20px 30%;
+    font-family: $playfair;
+    text-align: center;
+}
+
+.proprietes_cards {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card {
+    width: 30%;
+    border: 1px solid #9E9E9E;
+    border-radius: 4px;
+    margin: 15px;
+    text-align: center;
+}
+
+.thumbnail {
+    overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+.propriete_title{
+    padding: 15px 0;
+    font-weight: bold;
+}
+
+.propriete_infos {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #9E9E9E;
+    padding: 10px;
+}
+
+.propriete_city {
+    color: #9E9E9E;
+    padding: 10px 5px;
+    font-family: $playfair;
+    font-size: 1rem;
+}
+
+.propriete_price {
+    color: #e2574c;
+    font-size: 0.8rem;
+    font-family: Helvetica, sans-serif;
+    padding: 15px;
+}
+
+.propriete_infos p {
+    font-family: Helvetica, serif;
+    font-size: 0.7rem;
+    color: #9E9E9E;
+    padding: 20px 5px;
+}
+
+.aucunes_proprietes{
+    padding: 15px 0 50px;
+}
+
+.proprietes_button_all{
+    background-color: #e2574c;
+    padding: 15px 40px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin: 20px 40%;
+}
+
+
+
+
+/* ------>> SINGLE PROPRIETE */
+
+.article_main_title{
+    padding: 20px 0;
+    margin: 20px 0;
+    font-family: Helvetica, sans-serif;
+}
+
+.bloc_infos{
+    padding: 5px 20px;
+    width: 60%;
+}
+
+.bloc_price{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.bloc_article{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 30px;
+}
+
+.article_img{
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 2px #ccc;
+    border-radius: 5px;
+}
+
+.article_infos{
+    font-size: 0.8rem;
+    color: #5b5b5b;
+}
+
+.article_infos  p{
+    font-family: $playfair;
+    padding: 5px 0;
+}
+
+.fa-bookmark{
+    color: #9E9E9E;
+    font-size: 2rem;
+}
+
+.article_price{
+    color: #e2574c;
+    font-size: 2rem;
+    font-family: $raleway;
+    padding-left: 20px;
+}
+
+.grey_br{
+    border-bottom: 2px solid #9E9E9E;
+}
+
+/***************************** MEDIA QUERY - MOBILE ****************************/
+
+@media (max-width: 400px){
+    .proprietes_cards{
+        display: block;
+    }
+
+    .card{
+        width: 95%;
+        font-size: 0.8rem;
+    }
+    .propriete_city {
+        padding: 5px;
+        font-size: 0.8rem;
+    }
+}

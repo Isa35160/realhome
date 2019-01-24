@@ -17,6 +17,14 @@ function insert_css() {
     wp_enqueue_style( 'load-fa', 'https://use.fontawesome.com/releases/v5.6.3/css/all.css' );
     wp_enqueue_style('font');
 
+    // Google Fonts
+    wp_enqueue_style( 'raleway', 'https://fonts.googleapis.com/css?family=Raleway:400,500,600,700' );
+    wp_enqueue_style('font-raleway');
+
+    // Google Fonts
+    wp_enqueue_style( 'playfair', 'https://fonts.googleapis.com/css?family=Playfair+Display:400,700' );
+    wp_enqueue_style('font-playfair');
+
 }
 
 add_theme_support('menus');
@@ -173,3 +181,39 @@ if( function_exists('acf_add_options_page') ) {
 }
 
 
+// LOGIN PAGE
+
+function my_login_logo() { ?>
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/logo_login_page.png);
+            height: 73px;
+            width: 200px;
+            background-size: 200px 73px;
+            background-repeat: no-repeat;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
+
+      // ----- >LINK Logo - Login Page
+
+function my_login_logo_url() {
+    return home_url();
+}
+add_filter( 'login_headerurl', 'my_login_logo_url' );
+
+function my_login_logo_url_title() {
+    return 'RealHome - Front';
+}
+add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+
+
+       // ----- >Stylsheet & JS - Login Page
+
+function my_login_stylesheet() {
+    wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/css/login.css' );
+    wp_enqueue_script( 'custom-login', get_stylesheet_directory_uri() . '/js/login.js' );
+}
+add_action( 'login_enqueue_scripts', 'my_login_stylesheet' );

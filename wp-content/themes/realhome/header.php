@@ -35,6 +35,9 @@
                               <div class="header_nav_rs">
                                   <?php wp_nav_menu(array('theme_location' => 'menu-secondaire', 'container' => 'nav')); ?>
                               </div>
+                              <div class="menu_burger">
+                                        <i class="fas fa-bars"></i>
+                              </div>
                     </div>
           </div>
 

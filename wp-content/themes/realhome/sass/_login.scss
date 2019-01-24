@@ -1,0 +1,56 @@
+body{
+    background-color: #fff;
+    font-family: $raleway;
+}
+
+#login {
+    width: 500px;
+    margin: auto;
+    padding: 50px 0 0 0;
+}
+
+.login form{
+    box-shadow: 0 0px 2px rgba(0,0,0,.13);
+    border: 1px solid #9E9E9E;
+    border-radius: 3px;
+}
+
+.login form .input{
+    border-radius: 3px;
+    padding: 5px 15px;
+}
+
+.wp-core-ui .button .button-primary, body.login div#login form#loginform p.submit input#wp-submit {
+    background-color: #444;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0px 37%;
+    margin-top: 30px;
+}
+
+.login #nav, .login #backtoblog{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.login #nav a, .login #backtoblog a{
+    color: #fff;
+    background-color: #5e5e5e;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #5e5e5e;
+    transition: all 0.3s;
+    width: 50%;
+}
+
+.login #nav a:hover, .login #backtoblog a:hover{
+    background-color: #fff;
+    color: #5e5e5e;
+    box-shadow: inset 2px 4px 6px rgba(0,0,0,.13);
+}
+

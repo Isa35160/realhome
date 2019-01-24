@@ -1,0 +1,155 @@
+/*
+Theme Name:   realhome
+Description:  theme from scratch
+Author:       Isabel Teixeira
+Template:     realhome
+Version:      0.1.0
+*/
+
+//Variables - Typos
+$raleway: 'Raleway', sans-serif;
+$playfair: 'Playfair Display', serif;
+
+//Variables - Couleurs
+
+$link_header_color :#3c3c3c;
+$link_hover_header_color :#f2f2f2;
+
+$link_footer_color :#ededed;
+$link_mail_footer_color :#e2574c;
+$bg_footer: #303030;
+
+$bg_points_forts: #f6f6f6;
+
+@import 'header';
+@import 'footer';
+@import 'nos_agents';
+@import 'nos_proprietes';
+@import 'nos_points_forts';
+@import 'nos_partenaires';
+@import 'a_propos';
+@import 'actualites';
+@import 'contact';
+
+* {
+  box-sizing: border-box;
+  font-family: $raleway;
+  font-weight: normal;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 15px 0;
+}
+
+h3{
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+/********************************HOME*******************************/
+
+.title_home {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  width: 80%;
+}
+
+.img-homepage {
+  position: relative;
+  text-align: center;
+  z-index: -9999;
+  top: -120px;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.img-homepage img {
+  width: 100%;
+}
+
+/*-----> HOME = NOTRE AGENCE */
+.notre_agence {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.notre_agence_bloc_title {
+  display: flex;
+  flex-flow: column;
+  width: 40%;
+}
+
+.notre_agence_title {
+  color: #242424;
+  padding: 0 20px;
+  text-align: right;
+}
+
+.notre_agence_underline {
+  margin: 0 90%;
+  border-bottom: 3px solid black;
+  width: 5%;
+  padding-top: 20px;
+}
+
+
+.notre_agence_desc {
+  font-size: 0.9rem;
+  padding: 0 20px;
+  font-family: $playfair;
+  width: 70%;
+  color: #797979;
+}
+
+@media (max-width: 400px) {
+
+  .container {
+    max-width: 400px;
+  }
+
+
+  /*-------> HOME - NOTRE AGENCE*/
+  .notre_agence{
+    display: block;
+    text-align: center;
+  }
+
+  .notre_agence_bloc_title{
+    display: block;
+    text-align: center;
+  }
+
+
+}
