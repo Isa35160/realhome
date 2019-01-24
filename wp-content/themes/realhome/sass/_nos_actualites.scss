@@ -1,88 +1,227 @@
 /* ---- NOS ACTUALITES = home.php*/
 
 .actualites_main_title {
-    text-align: center;
-    padding-top: 40px;
-    font-family: Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 40px;
+  font-family: Helvetica, sans-serif;
 }
 
 .actualites {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
 }
 
 .actualite {
-    width: 95%;
-    border-radius: 10px;
-    position: relative;
-    margin-bottom: 50px;
+  width: 95%;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 50px;
 }
 
-.thumbnail{
-    border-radius: 4px;
+.thumbnail {
+  border-radius: 4px;
 }
 
 .actualite_description p {
-    font-size: 0.9rem;
-    font-family: $playfair;
-    color: $main_text_color;
-    margin-top: 15px;
+  font-size: 0.9rem;
+  font-family: $playfair;
+  color: $main_text_color;
+  margin-top: 15px;
 }
 
 .post_btn {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .lire_suite {
-    background-color: $link_mail_footer_color;
-    border: 1px solid $link_mail_footer_color;
-    padding: 15px 30px;
-    border-radius: 4px;
-    color: #fff;
-    transition: all 0.3s;
+  background-color: $link_mail_footer_color;
+  border: 1px solid $link_mail_footer_color;
+  padding: 15px 30px;
+  border-radius: 4px;
+  color: #fff;
+  transition: all 0.3s;
 }
 
-.lire_suite:hover{
-    background-color: white;
-    color: $link_mail_footer_color;;
+.lire_suite:hover {
+  background-color: white;
+  color: $link_mail_footer_color;;
 }
 
 
 aside {
-    width: 30%;
+  width: 30%;
 }
 
-aside ul li{
-    padding-bottom: 10px;
-    color: $main_text_color;
-    margin-bottom: 5px;
-    display: flex;
-    flex-direction: column;
+aside ul li {
+  padding-bottom: 10px;
+  color: $main_text_color;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
 }
 
-.post-date{
-    font-family: $playfair;
-    font-size: 0.9rem;
-    color: $main_text_color;
+.post-date {
+  font-family: $playfair;
+  font-size: 0.9rem;
+  color: $main_text_color;
 }
 
 /* ---- ACTUALITE = single.php*/
 
-.actualite_main_title{
-    padding: 30px 0;
+.actualite_main_title {
+  padding: 50px 0 0 0;
 }
 
-.actualite_single{
-    display: flex;
-    justify-content: space-between;
+.actualite_single {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
 }
 
-.actualite_infos img{
+.actualite_date_auteur {
+  font-family: $playfair;
+  padding: 20px 0;
+  color: $main_text_color;
+  border-bottom: 1px solid $main_text_color;
+  border-top: 1px solid $main_text_color;
+  margin: 30px 0;
+  font-size: 0.9rem;
+}
+
+.actualite_infos {
+
+  p {
+    font-family: $playfair;
+    padding: 10px 0;
+    color: $main_text_color;
+  }
+
+
+  img {
     height: 600px;
     margin: 20px 0;
+    border-radius: 4px;
+  }
 }
 
-.gray_border{
-    border-right: 2px solid #9E9E9E;
+.gray_border {
+  border-right: 2px solid #9E9E9E;
+  margin: 0 50px;
+}
+
+/*-----------------> ACTUALITE = COMMENTAIRES*/
+
+
+.comment-form {
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  p label {
+    display: none;
+  }
+
+  p {
+    margin: 10px 0;
+
+    input, textarea {
+      padding: 15px;
+    }
+  }
+
+  p:nth-child(2) {
+    order: 3;
+    width: 100%;
+  }
+
+  p:nth-child(3) {
+    order: 1;
+    width: 49%;
+
+  }
+
+  p:nth-child(4) {
+    order: 2;
+    width: 49%;
+  }
+
+  p.form-submit {
+    order: 4;
+  }
+}
+
+.comment-body {
+  background-color: $bg_points_forts;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 20px;
+  display: flex;
+  flex-flow: row wrap;
+
+  p {
+    font-family: $playfair;
+    font-size: 0.8rem;
+    width: 100%;
+  }
+}
+
+.comment-author{
+  display: flex;
+  justify-content: space-around;
+  padding:15px;
+  width: 45%;
+
+  cite{
+    font-family: $playfair;
+  }
+}
+
+.comment-meta{
+  display: flex;
+  justify-content: space-around;
+  padding:15px;
+  width: 45%;
+
+  a{
+    font-family: $playfair;
+  }
+}
+
+.comment-edit-link{
+  display: none;
+}
+.says{
+  display: none;
+}
+
+.comment-notes {
+  display: none;
+}
+
+.reply {
+  margin: 40px 40px 0;
+
+  a {
+    text-transform: uppercase;
+    color: $bg_footer;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+}
+
+.submit {
+  background-color: #e2574c;
+  border: 1px solid #e2574c;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.3s;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: white;
+    color: $link_mail_footer_color;
+  }
 }

@@ -8,8 +8,8 @@
     /*border-bottom: 2px solid red;*/
 /*}*/
 
-.villes_nav a:hover, .villes_nav a:active{
-    border-bottom: 2px solid red;
+.villes_nav a:hover, .villes_nav a:active, .villes_nav a:focus{
+    border-bottom: 2px solid $link_mail_footer_color;
 }
 
 .aucunes_proprietes{

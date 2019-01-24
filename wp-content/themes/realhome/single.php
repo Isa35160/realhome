@@ -19,8 +19,8 @@
 
           <div class="actualite">
                     <section class="actualite_infos">
-                              <p class="actualite_date"><?php the_time('d M Y'); ?></p>
                         <?php the_content(); ?>
+                              <p class="actualite_date_auteur"><?php the_time('d M Y'); ?>   /   PAR <span style="text-transform:uppercase; color: #e2574c"><?php echo $fname = get_the_author_meta('first_name'); ?> <?php echo $lname = get_the_author_meta('last_name'); ;?></span></p>
 
                     </section>
               <?php comments_template(); ?>

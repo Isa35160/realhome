@@ -2,16 +2,14 @@
 
 add_action('wp_enqueue_scripts', 'insert_css');
 function insert_css() {
-    // On ajoute le css general du theme
+    // On ajoute le css / js general du theme
     wp_enqueue_style('style', get_stylesheet_uri());
-
+    wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array ( 'jquery' ), 1.1, true);
+    wp_enqueue_script('script');
 
     //On  ajoute le jQuery au thème
     wp_register_script('jquery2','https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js');
     wp_enqueue_script('jquery2');
-
-    wp_register_script('scroll','https://unpkg.com/scrollreveal/dist/scrollreveal.min.js');
-    wp_enqueue_script('scroll');
 
     // FontAwesome
     wp_enqueue_style( 'load-fa', 'https://use.fontawesome.com/releases/v5.6.3/css/all.css' );
@@ -210,10 +208,17 @@ function my_login_logo_url_title() {
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
 
-       // ----- >Stylsheet & JS - Login Page
+          // --------> Comments
+function crunchify_disable_comment_url($fields) {
+    unset($fields['url']);
+    return $fields;
+}
+add_filter('comment_form_default_fields','crunchify_disable_comment_url');
+
+          // --------> Stylsheet & JS - Login Page
 
 function my_login_stylesheet() {
-    wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/css/login.css' );
-    wp_enqueue_script( 'custom-login', get_stylesheet_directory_uri() . '/js/login.js' );
+    wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/style.css' );
+    wp_enqueue_script( 'custom-login', get_stylesheet_directory_uri() . '/js/script.js' );
 }
 add_action( 'login_enqueue_scripts', 'my_login_stylesheet' );
