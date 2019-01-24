@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1f4d781-9a04-4cf1-95c1-144bc74d681e" name="Default Changelist" comment="Installation Wordpress + theme">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-config.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/realhome/gabarit-contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/realhome/gabarit-contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/realhome/sass/_a_propos.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/realhome/sass/_a_propos.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/realhome/sass/_actualites.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/realhome/sass/_nos_actualites.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/realhome/sass/_contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/realhome/sass/_contact.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/realhome/sass/_nos_agents.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/realhome/sass/_nos_agents.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/realhome/sass/_nos_points_forts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/realhome/sass/_nos_points_forts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/realhome/sass/_nos_proprietes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/realhome/sass/_nos_proprietes.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/realhome/sass/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/realhome/sass/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/realhome/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/realhome/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="f1f4d781-9a04-4cf1-95c1-144bc74d681e" name="Default Changelist" comment="Installation Wordpress + theme" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,8 +100,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/wp-content/themes/realhome/sass/_contact.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="515">
-                  <caret line="72" column="29" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
+                <state relative-caret-position="339">
+                  <caret line="64" column="23" lean-forward="true" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -318,18 +306,18 @@
       <workItem from="1547799794038" duration="15310000" />
       <workItem from="1547818627558" duration="37404000" />
       <workItem from="1548057097888" duration="74932000" />
-      <workItem from="1548326489447" duration="1694000" />
+      <workItem from="1548326489447" duration="1866000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129340000" />
+    <option name="totallyTimeSpent" value="129512000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15245202" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15245202" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -342,7 +330,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49840087" visible="true" weight="0.276273" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49840087" visible="true" weight="0.276273" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50159913" side_tool="true" weight="0.27843988" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -651,8 +639,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/realhome/sass/_contact.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="72" column="29" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
+        <state relative-caret-position="339">
+          <caret line="64" column="23" lean-forward="true" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
         </state>
       </provider>
     </entry>
