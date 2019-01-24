@@ -23,7 +23,7 @@
                     <p>Telephone : <?php the_field('telephone', 'option'); ?></p>
                     <p>Fax : <?php the_field('fax', 'option'); ?></p>
                     <p>
-                              <a href="mailto:<?php the_field('email', 'option'); ?>"><?php the_field('email', 'option'); ?></a>
+                         Email: <a href="mailto:<?php the_field('email', 'option'); ?>"><?php the_field('email', 'option'); ?></a>
                     </p>
 
           </div>

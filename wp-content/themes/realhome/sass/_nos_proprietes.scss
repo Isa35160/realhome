@@ -74,14 +74,14 @@
 }
 
 .propriete_city {
-    color: #9E9E9E;
+    color: $main_text_color;
     padding: 10px 5px;
     font-family: $playfair;
     font-size: 1rem;
 }
 
 .propriete_price {
-    color: #e2574c;
+    color: $link_mail_footer_color;
     font-size: 0.8rem;
     font-family: Helvetica, sans-serif;
     padding: 15px;
@@ -90,7 +90,7 @@
 .propriete_infos p {
     font-family: Helvetica, serif;
     font-size: 0.7rem;
-    color: #9E9E9E;
+    color: $main_text_color;
     padding: 20px 5px;
 }
 
@@ -99,7 +99,7 @@
 }
 
 .proprietes_button_all{
-    background-color: #e2574c;
+    background-color: $link_footer_color;
     padding: 15px 40px;
     border-radius: 4px;
     color: #fff;

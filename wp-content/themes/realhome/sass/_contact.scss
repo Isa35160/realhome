@@ -19,16 +19,26 @@
     width: 35%;
 }
 
-.contact_bloc_infos p, .contact_bloc_infos p a {
+.contact_bloc_infos p {
     font-size: 0.8rem;
     font-family: $playfair;
     padding: 5px 0;
+
+    a {
+        font-size: 0.8rem;
+        font-family: $playfair;
+        padding: 5px 0;
+        color: $link_mail_footer_color;
+    }
+
 }
-
-
 
 .contact_form {
     width: 80%;
+}
+
+.contact_input{
+    margin-top: 25px;
 }
 
 input, textarea {
@@ -49,12 +59,22 @@ input, textarea {
 }
 
 .wpcf7-submit{
-    background-color: #e2574c;
+    background-color: $link_mail_footer_color;
+    border: 1px solid $link_mail_footer_color;
     padding: 15px 40px;
     border-radius: 4px;
     color: #fff;
     font-weight: bold;
     display: flex;
     justify-content: center;
+    width: 20%;
+    margin-top: 15px;
+    transition: all 0.3s;
+    text-transform: uppercase;
+
+    &:hover{
+        background-color: white;
+        color: $link_mail_footer_color;
+    }
 }
 

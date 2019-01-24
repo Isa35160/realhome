@@ -19,6 +19,8 @@ $link_footer_color :#ededed;
 $link_mail_footer_color :#e2574c;
 $bg_footer: #303030;
 
+$main_text_color: #797979;
+
 $bg_points_forts: #f6f6f6;
 
 @import 'header';
@@ -28,7 +30,7 @@ $bg_points_forts: #f6f6f6;
 @import 'nos_points_forts';
 @import 'nos_partenaires';
 @import 'a_propos';
-@import 'actualites';
+@import 'nos_actualites';
 @import 'contact';
 
 * {

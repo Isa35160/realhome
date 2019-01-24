@@ -6,7 +6,6 @@
     font-family: Helvetica, sans-serif;
 }
 
-
 .actualites {
     display: flex;
     justify-content: space-between;
@@ -15,19 +14,19 @@
 
 .actualite {
     width: 95%;
-}
-
-.actualite {
     border-radius: 10px;
     position: relative;
     margin-bottom: 50px;
 }
 
+.thumbnail{
+    border-radius: 4px;
+}
 
 .actualite_description p {
     font-size: 0.9rem;
     font-family: $playfair;
-    color: #9E9E9E;
+    color: $main_text_color;
     margin-top: 15px;
 }
 
@@ -36,11 +35,19 @@
 }
 
 .lire_suite {
-    background-color: #e2574c;
+    background-color: $link_mail_footer_color;
+    border: 1px solid $link_mail_footer_color;
     padding: 15px 30px;
     border-radius: 4px;
     color: #fff;
+    transition: all 0.3s;
 }
+
+.lire_suite:hover{
+    background-color: white;
+    color: $link_mail_footer_color;;
+}
+
 
 aside {
     width: 30%;
@@ -48,7 +55,7 @@ aside {
 
 aside ul li{
     padding-bottom: 10px;
-    color: #6f6f6f;
+    color: $main_text_color;
     margin-bottom: 5px;
     display: flex;
     flex-direction: column;
@@ -57,7 +64,7 @@ aside ul li{
 .post-date{
     font-family: $playfair;
     font-size: 0.9rem;
-    color: #9E9E9E;
+    color: $main_text_color;
 }
 
 /* ---- ACTUALITE = single.php*/

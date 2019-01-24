@@ -256,7 +256,7 @@ footer {
 .agent_presentation p {
   font-family: "Playfair Display", serif;
   font-size: 0.8rem;
-  color: #9E9E9E;
+  color: #797979;
   line-height: 30px; }
 
 .villes_nav {
@@ -321,7 +321,7 @@ footer {
   padding: 10px; }
 
 .propriete_city {
-  color: #9E9E9E;
+  color: #797979;
   padding: 10px 5px;
   font-family: "Playfair Display", serif;
   font-size: 1rem; }
@@ -335,14 +335,14 @@ footer {
 .propriete_infos p {
   font-family: Helvetica, serif;
   font-size: 0.7rem;
-  color: #9E9E9E;
+  color: #797979;
   padding: 20px 5px; }
 
 .aucunes_proprietes {
   padding: 15px 0 50px; }
 
 .proprietes_button_all {
-  background-color: #e2574c;
+  background-color: #ededed;
   padding: 15px 40px;
   border-radius: 4px;
   color: #fff;
@@ -428,7 +428,7 @@ footer {
 .points_forts_description p {
   font-family: "Playfair Display", serif;
   font-size: 0.8rem;
-  color: #9E9E9E; }
+  color: #797979; }
 
 .points_forts_img {
   height: 60px;
@@ -480,7 +480,7 @@ footer {
 .apropos_presentation {
   font-family: "Playfair Display", serif;
   font-size: 0.85rem;
-  color: #9E9E9E;
+  color: #797979;
   width: 80%;
   line-height: 30px; }
 
@@ -521,17 +521,18 @@ footer {
   padding-top: 30px; }
 
 .actualite {
-  width: 95%; }
-
-.actualite {
+  width: 95%;
   border-radius: 10px;
   position: relative;
   margin-bottom: 50px; }
 
+.thumbnail {
+  border-radius: 4px; }
+
 .actualite_description p {
   font-size: 0.9rem;
   font-family: "Playfair Display", serif;
-  color: #9E9E9E;
+  color: #797979;
   margin-top: 15px; }
 
 .post_btn {
@@ -539,16 +540,22 @@ footer {
 
 .lire_suite {
   background-color: #e2574c;
+  border: 1px solid #e2574c;
   padding: 15px 30px;
   border-radius: 4px;
-  color: #fff; }
+  color: #fff;
+  transition: all 0.3s; }
+
+.lire_suite:hover {
+  background-color: white;
+  color: #e2574c; }
 
 aside {
   width: 30%; }
 
 aside ul li {
   padding-bottom: 10px;
-  color: #6f6f6f;
+  color: #797979;
   margin-bottom: 5px;
   display: flex;
   flex-direction: column; }
@@ -556,7 +563,7 @@ aside ul li {
 .post-date {
   font-family: "Playfair Display", serif;
   font-size: 0.9rem;
-  color: #9E9E9E; }
+  color: #797979; }
 
 /* ---- ACTUALITE = single.php*/
 .actualite_main_title {
@@ -591,13 +598,21 @@ aside ul li {
 .contact_bloc_infos {
   width: 35%; }
 
-.contact_bloc_infos p, .contact_bloc_infos p a {
+.contact_bloc_infos p {
   font-size: 0.8rem;
   font-family: "Playfair Display", serif;
   padding: 5px 0; }
+  .contact_bloc_infos p a {
+    font-size: 0.8rem;
+    font-family: "Playfair Display", serif;
+    padding: 5px 0;
+    color: #e2574c; }
 
 .contact_form {
   width: 80%; }
+
+.contact_input {
+  margin-top: 25px; }
 
 input, textarea {
   font-size: 1.1rem;
@@ -615,12 +630,20 @@ input, textarea {
 
 .wpcf7-submit {
   background-color: #e2574c;
+  border: 1px solid #e2574c;
   padding: 15px 40px;
   border-radius: 4px;
   color: #fff;
   font-weight: bold;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  width: 20%;
+  margin-top: 15px;
+  transition: all 0.3s;
+  text-transform: uppercase; }
+  .wpcf7-submit:hover {
+    background-color: white;
+    color: #e2574c; }
 
 * {
   box-sizing: border-box;
